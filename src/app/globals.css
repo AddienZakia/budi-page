@@ -1,10 +1,34 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Raleway:wght@300;400;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-white_custom overflow-x-hidden;
+}
+
 * {
   font-family: "Cormorant Garamond", serif;
   font-family: "Raleway", sans-serif;
+}
+
+section#headers ul {
+  @apply space-y-5 md:space-y-0;
+}
+
+section#headers li {
+  @apply flex items-center space-x-5;
+}
+
+section#headers a {
+  @apply text-biru_gelap/60 text-start md:text-xl;
+}
+
+div#galery img:nth-child(2) {
+  @apply xl:col-span-2;
+}
+
+div#galery img:nth-child(4) {
+  @apply xl:col-span-2;
 }

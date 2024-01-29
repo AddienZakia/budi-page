@@ -1,7 +1,13 @@
+import About from "./components/About";
+import Design from "./components/Design";
+import Galery from "./components/Galery";
+
 export default function Home() {
   return (
     <>
-      <p className=" text-biru_nyentrik">Hello gwejch budi</p>
+      <About />
+      <Design />
+      <Galery />
     </>
   );
 }
