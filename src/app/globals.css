@@ -25,10 +25,7 @@ section#headers a {
   @apply text-biru_gelap/60 text-start md:text-xl;
 }
 
-div#galery img:nth-child(2) {
-  @apply xl:col-span-2;
-}
-
-div#galery img:nth-child(4) {
+div#galery div:nth-child(2),
+div#galery div:nth-child(4) {
   @apply xl:col-span-2;
 }

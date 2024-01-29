@@ -14,6 +14,14 @@ export default function Design() {
         <h1 className="hidden md:block rotate-90 text-[80px] md:text-[140px] lg:text-[170px] font-black absolute bottom-96 -right-32 md:-right-[270px] text-white_custom text-border-biru_gelap text-border-size-4">
           Greeting
         </h1>
+
+        <Image
+          src="/main/Ellipse.png"
+          width={301}
+          height={301}
+          alt="ellipse"
+          className="absolute min-[500px]:-top-24 min-[500px]:left-10 -top-16 left-0 xl:-top-24 xl:left-80 w-[30%] min-[500px]:w-[20%] xl:w-[10%]"
+        />
       </div>
 
       <h1 className="text-4xl md:text-5xl font-extrabold text-biru_gelap">

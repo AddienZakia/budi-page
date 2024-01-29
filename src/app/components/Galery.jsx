@@ -30,16 +30,15 @@ export default function Galery() {
         >
           {["", "", "", "", "", ""].map((x, i) => {
             return (
-              <>
+              <div key={i}>
                 <Image
-                  key={i}
                   src="/main/rec.png"
                   width={250}
                   height={250}
                   alt="Picture of the author"
                   className="w-full h-[250px]"
                 />
-              </>
+              </div>
             );
           })}
         </div>
