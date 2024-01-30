@@ -66,7 +66,7 @@ export default function Design() {
                 )}
                 data-aos="fade-up"
                 data-aos-duration="500"
-                data-aos-delay={100 + (i + 1) * 200}
+                data-aos-delay={(i + 1) * 100}
               >
                 <Image
                   src="/main/rec.png"
