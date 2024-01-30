@@ -28,6 +28,7 @@ export default function Galery() {
         )}
       >
         <h1
+          id="anchor-galery"
           className="text-4xl md:text-5xl font-extrabold text-biru_gelap"
           data-aos="fade-up"
           data-aos-duration="500"
