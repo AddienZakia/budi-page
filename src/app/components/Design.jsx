@@ -1,10 +1,16 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Image from "next/image";
+import Aos from "aos";
 
 import Link from "next/link";
 import { twMerge } from "tailwind-merge";
 
 export default function Design() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <section className="relative my-10 md:my-32 lg:my-20 flex flex-col justify-center items-center ">
       <div>
@@ -21,10 +27,18 @@ export default function Design() {
           height={301}
           alt="ellipse"
           className="absolute min-[500px]:-top-24 min-[500px]:left-10 -top-16 left-0 xl:-top-24 xl:left-80 w-[30%] min-[500px]:w-[20%] xl:w-[10%]"
+          data-aos="zoom-in"
+          data-aos-duration="500"
+          data-aos-delay="100"
         />
       </div>
 
-      <h1 className="text-4xl md:text-5xl font-extrabold text-biru_gelap">
+      <h1
+        className="text-4xl md:text-5xl font-extrabold text-biru_gelap"
+        data-aos="fade-up"
+        data-aos-duration="500"
+        data-aos-delay="100"
+      >
         Design
       </h1>
 
@@ -34,6 +48,9 @@ export default function Design() {
             "relative before:block before:absolute before:-left-1.5 before:top-1.5 before:rounded-md before:border before:border-biru_gelap before:w-full before:h-full",
             "w-fit px-5 py-2 bg-biru_gelap rounded-md text-white_custom font-semibold text-lg"
           )}
+          data-aos="fade-right"
+          data-aos-duration="500"
+          data-aos-delay="100"
         >
           Poster
         </h1>
@@ -47,6 +64,9 @@ export default function Design() {
                   " drop-shadow-xl bg-white_custom rounded-md",
                   "flex justify-center items-center px-8 md:px-10 py-10 pb-14"
                 )}
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay={100 + (i + 1) * 200}
               >
                 <Image
                   src="/main/rec.png"
@@ -69,6 +89,9 @@ export default function Design() {
             "relative before:block before:absolute before:-left-1.5 before:top-1.5 before:rounded-md before:border before:border-biru_gelap before:w-full before:h-full",
             "w-fit px-5 py-2 bg-biru_gelap rounded-md text-white_custom font-semibold text-lg"
           )}
+          data-aos="fade-left"
+          data-aos-duration="500"
+          data-aos-delay="100"
         >
           Greeting Card
         </h1>
@@ -82,6 +105,9 @@ export default function Design() {
                   " drop-shadow-xl bg-white_custom rounded-md",
                   "flex justify-center items-center px-8 md:px-10 py-10 pb-14"
                 )}
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay={500 - (i + 1) * 100}
               >
                 <Image
                   src="/main/rec.png"
@@ -102,6 +128,9 @@ export default function Design() {
             "relative before:block before:absolute before:-left-1.5 before:top-1.5 before:rounded-md before:border before:border-biru_gelap before:w-full before:h-full",
             "transition duration-200 cursor-pointer w-fit px-5 py-2 bg-biru_gelap hover:bg-[#6182b7] hover:before:border-[#6182b7] rounded-md text-white_custom font-semibold text-lg my-10"
           )}
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-delay="100"
         >
           Lihat Lebih Banyak
         </h1>
