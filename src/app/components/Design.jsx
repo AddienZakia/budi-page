@@ -55,7 +55,12 @@ export default function Design() {
           Poster
         </h1>
 
-        <div className="my-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8 lg:gap-10">
+        <div
+          className="my-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8 lg:gap-10"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-delay="300"
+        >
           {["", "", ""].map((x, i) => {
             return (
               <div
@@ -64,9 +69,6 @@ export default function Design() {
                   " drop-shadow-xl bg-white_custom rounded-md",
                   "flex justify-center items-center px-8 md:px-10 py-10 pb-14"
                 )}
-                data-aos="fade-up"
-                data-aos-duration="500"
-                data-aos-delay={(i + 1) * 100}
               >
                 <Image
                   src="/main/rec.png"
@@ -96,7 +98,12 @@ export default function Design() {
           Greeting Card
         </h1>
 
-        <div className="my-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8 lg:gap-10">
+        <div
+          className="my-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8 lg:gap-10"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-delay="300"
+        >
           {["", "", ""].map((x, i) => {
             return (
               <div
@@ -105,9 +112,6 @@ export default function Design() {
                   " drop-shadow-xl bg-white_custom rounded-md",
                   "flex justify-center items-center px-8 md:px-10 py-10 pb-14"
                 )}
-                data-aos="fade-up"
-                data-aos-duration="500"
-                data-aos-delay={500 - (i + 1) * 100}
               >
                 <Image
                   src="/main/rec.png"
